@@ -63,7 +63,6 @@ const NoticiasProvider = ({ children }) => {
     </NoticiasContext.Provider>
   )
 }
-
 export {
   NoticiasProvider
 }
