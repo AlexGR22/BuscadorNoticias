@@ -50,7 +50,6 @@ export default function Formulario() {
                         </Select>
                     </FormControl>
                 </Grid>
-                
                 <Grid item >
                     <FormControl fullWidth>
                         <InputLabel id="demo-simple-select-label">Categoría</InputLabel>
