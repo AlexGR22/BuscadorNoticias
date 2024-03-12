@@ -4,6 +4,8 @@ import useNoticias from '../hooks/useNoticias'
 
 const CATEGORIAS = [
     { value: 'general', label: 'General' },
+    {value : 'world', label: 'Mundial'},
+    {value : 'nation', label: 'Nacional'},
     { value: 'business', label: 'Negocios' },
     { value: 'entertainment', label: 'Entretenimiento' },
     { value: 'health', label: 'Salud' },
@@ -13,10 +15,10 @@ const CATEGORIAS = [
 ]
 
 const PAISES = [
-    { value: 'ar', label: 'Argentina' },
-    { value: 'br', label: 'Brasil' },
-    { value: 'co', label: 'Colombia' },
     { value: 'us', label: 'Estados Unidos' },
+    { value: 'ca', label: 'Canada' },
+    { value: 'gb', label: 'Reino Unido' },
+    { value: 'ie', label: 'Irlanda' },
 ]
 
 export default function Formulario() {

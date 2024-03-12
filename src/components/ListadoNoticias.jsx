@@ -1,15 +1,14 @@
 import { Grid, Typography } from "@mui/material"
-import Pagination from '@mui/material/Pagination';
+// import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
 import useNoticias from "../hooks/useNoticias"
 import Noticia from "./Noticia"
 
 const ListadoNoticias = () => {
-    const { noticias, totalNoticias, handleChangePage, pagina } = useNoticias()
-
-    const totalPaginas = Math.ceil(totalNoticias / 20)
-    console.log(totalPaginas);
-    console.log(totalNoticias);
+    // const { noticias, totalNoticias, handleChangePage, pagina } = useNoticias()
+    // const totalPaginas = Math.ceil(totalNoticias / 20)
+    
+    const { noticias } = useNoticias()
 
     return (
         <>
@@ -28,7 +27,7 @@ const ListadoNoticias = () => {
             >
                 {noticias.map(noticia =>
                     <Noticia
-                        key={noticia.url}
+                        key={noticia.link}
                         noticia={noticia} />)
                 }
             </Grid>
@@ -38,12 +37,14 @@ const ListadoNoticias = () => {
                 alignItems="center"
                 marginY={5}
             >
-                <Pagination 
+                {/* PAGINACION NO DISPONIBLE CON API FREE */}
+                
+                {/* <Pagination 
                     count={totalPaginas} 
                     color="primary" 
                     onChange={handleChangePage}
                     page={pagina}
-                />
+                /> */}
             </Stack>
         </>
     )

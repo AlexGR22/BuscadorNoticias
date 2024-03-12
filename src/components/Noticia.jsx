@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid';
 
 
 const Noticia = ({ noticia }) => {
-    const { urlToImage, url, title, source, description } = noticia
+    const { image, url, title, source, description } = noticia
 
     return (
         <Grid
@@ -29,7 +29,7 @@ const Noticia = ({ noticia }) => {
                 <CardMedia
                     component='img'
                     alt={`Noticia: ${title}`}
-                    image={urlToImage}
+                    image={image}
                     height={'250'}
                 />
 
